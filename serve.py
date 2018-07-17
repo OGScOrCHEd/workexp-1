@@ -1,9 +1,9 @@
 import SimpleHTTPServer
 import SocketServer
 
-PORT = "80"
+PORT = 80
 
-Handler = SimpleServer.SimpleHTTPRequestHandler
+Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 
 httpd = SocketServer.TCPServer(("", PORT), Handler)
 
